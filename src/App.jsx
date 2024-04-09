@@ -30,9 +30,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div> */}
-      <h1>Subjecto Directo</h1>
-      <Form submitHandler = {addTodo}/>
-      <ToDoItem text="Do important things" id="fjudfjmss"/>
+      <h1>Hello World</h1>
+      {/* <Form submitHandler = {addTodo}/> */}
+      {/* <ToDoItem text="Do important things" id="fjudfjmss"/> */}
       {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
