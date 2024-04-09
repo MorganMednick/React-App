@@ -3,12 +3,22 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ToDoItem from './ToDoItem'
+import Form from './Form'
 
 function App() {
   //const [count, setCount] = useState(0)
   const [todos, setTodos] = useState([]); 
   //Returns an object containing a variable, and a function.
   //Whenever we change todos using setTodos, it'll re-render anything depending on SetTodos.
+
+  function addTodo(text) {
+    console.log('Add todo', text);
+    createTodo(text);
+  }
+
+  function createTodo(text){
+    
+  }
 
   return (
     <>
@@ -21,6 +31,7 @@ function App() {
         </a>
       </div> */}
       <h1>Subjecto Directo</h1>
+      <Form submitHandler = {addTodo}/>
       <ToDoItem text="Do important things" id="fjudfjmss"/>
       {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
